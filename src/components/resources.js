@@ -1,13 +1,19 @@
 import React from 'react';
-
-
+var loremIpsum = require('lorem-ipsum')
+  , output     = loremIpsum();
+output = loremIpsum({
+    count: 100                    // Number of words, sentences, or paragraphs to generate. 
+  , units: 'words'            // Generate words, sentences, or paragraphs. 
+  , format: 'html'               // Plain text or html 
+               
+});
 export default () => {
 
    
         return (
             <div className="jumbotron">
         <h1>resources</h1>
-        <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+        <p>{output}</p>
        
       </div>
         );

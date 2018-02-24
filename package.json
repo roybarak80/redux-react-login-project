@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "lorem-ipsum": "^1.0.4",
+    "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.1.1",
     "react-redux": "^5.0.7",
     "react-router": "^3.2.0",
+    "react-scripts": "1.1.1",
     "redux": "^3.7.2",
     "redux-promise": "^0.5.3",
     "uuid": "^3.2.1"
