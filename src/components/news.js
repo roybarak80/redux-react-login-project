@@ -12,7 +12,7 @@ export default () => {
    
         return (
             <div className="jumbotron">
-        <h1>News</h1>
+        <h1>News ff</h1>
         <p>{output}</p>
        
       </div>
