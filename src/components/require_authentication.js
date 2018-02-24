@@ -29,6 +29,7 @@ export default function(ComposedComponent){
         render(){
            console.log(this.props.router)
             return <ComposedComponent {...this.props}/>
+            
         }
     }
    

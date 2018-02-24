@@ -11,6 +11,7 @@ import requireAuth from './components/require_authentication';
 import App from './components/App';
 import reducers from './reducers';
 import Resources from './components/resources';
+import News from './components/news';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 ReactDOM.render(
@@ -18,6 +19,7 @@ ReactDOM.render(
     <Router history={browserHistory}>
         <Route path="/" component={App}>
         <Route path="resources" component={requireAuth(Resources)}/>
+        <Route path="news" component={requireAuth(News)}/>
         </Route>
        
     </Router>
